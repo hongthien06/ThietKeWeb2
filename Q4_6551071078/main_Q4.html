@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Form</title>
+  </head>
+  <body>
+    <div class="task-4">
+      <h2>Biểu mẫu đăng ký người dùng</h2>
+
+      <form action="#">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required />
+
+        <label>Age:</label>
+        <div class="radio-group">
+          <label
+            ><input class="radio" type="radio" name="age" value="18" required />
+            Dưới 18</label
+          >
+          <label
+            ><input class="radio" type="radio" name="age" value="19-35" />
+            19–35</label
+          >
+          <label
+            ><input class="radio" type="radio" name="age" value="36-48" />
+            36–48</label
+          >
+          <label
+            ><input class="radio" type="radio" name="age" value="49" /> Trên
+            49</label
+          >
+        </div>
+
+        <label for="profession">Profession:</label>
+        <input type="text" id="profession" name="profession" required />
+
+        <label for="country">Country:</label>
+        <select id="country" name="country" required>
+          <option value="">-- Chọn --</option>
+          <option value="vietnam">Việt Nam</option>
+          <option value="usa">Mỹ</option>
+          <option value="other">Khác</option>
+        </select>
+
+        <label for="interests">Interest:</label>
+        <div class="checkbox-group">
+          <label
+            ><input
+              class="checkbox"
+              type="checkbox"
+              name="interests"
+              value="music"
+            />
+            Âm nhạc</label
+          >
+          <label
+            ><input
+              class="checkbox"
+              type="checkbox"
+              name="interests"
+              value="game"
+            />
+            Game</label
+          >
+          <label
+            ><input
+              class="checkbox"
+              type="checkbox"
+              name="interests"
+              value="sports"
+            />
+            Thể thao</label
+          >
+          <label
+            ><input
+              class="checkbox"
+              type="checkbox"
+              name="interests"
+              value="travel"
+            />
+            Du lịch</label
+          >
+          <label
+            ><input
+              class="checkbox"
+              type="checkbox"
+              name="interests"
+              value="reading"
+            />
+            Đọc sách</label
+          >
+        </div>
+
+        <label for="ref">How did the user found out about the site</label>
+        <textarea id="ref" name="ref" rows="5" required></textarea>
+
+        <button type="submit">Gửi</button>
+      </form>
+    </div>
+  </body>
+</html>
